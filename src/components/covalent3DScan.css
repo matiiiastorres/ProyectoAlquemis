@@ -1,0 +1,66 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #3d3d3d87; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .title {
+    color: #7300ff; /* Título en púrpura claro */
+    text-align: center; /* Centrar el texto */
+  }
+  
+  .input-container {
+    margin-bottom: 20px;
+    text-align: center; /* Centrar los elementos */
+  }
+  
+  .input-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-container input[type="text"] {
+    padding: 10px; /* Aumentar el espacio interno */
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .input-container button {
+    padding: 10px 20px; /* Aumentar el espacio interno */
+    background-color: #8800ff; /* Botón en púrpura claro */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .token-container {
+    margin-top: 20px; /* Añadir espacio arriba */
+  }
+  
+  .token-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribuir los elementos horizontalmente */
+  }
+  
+  .token-info {
+    background-color: #fff; /* Fondo blanco */
+    color: #333; /* Texto oscuro */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 30%; /* Ancho fijo para mantener la distribución */
+    box-sizing: border-box; /* Incluir el padding y border en el ancho */
+  }
+  
+  .token-info h2 {
+    font-size: 18px; /* Tamaño de fuente más grande */
+    margin-bottom: 10px;
+  }
+  
