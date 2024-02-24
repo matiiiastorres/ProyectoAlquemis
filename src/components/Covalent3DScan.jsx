@@ -84,9 +84,9 @@ const CovalentTokenViewer = () => {
       return [128, 0, 128]; // Púrpura
     case 'LoopringCoin V2':
       return [255, 192, 203]; // Rosa claro
-    case 'Aave':
+    case 'Wrapped BTC':
       return [255, 140, 0]; // Naranja oscuro
-    case 'Uniswap':
+    case 'HoloToken':
       return [139, 0, 139]; // Violeta oscuro
     case 'Compound':
       return [139, 69, 19]; // Café
