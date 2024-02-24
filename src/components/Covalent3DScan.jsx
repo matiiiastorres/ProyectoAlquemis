@@ -7,7 +7,7 @@ const CovalentTokenViewer = () => {
   const [address, setAddress] = useState('');
   const [tokensData, setTokensData] = useState([]);
   const [selectedTokenIndex, setSelectedTokenIndex] = useState(-1);
-  const [clicked, setClicked] = useState(false);
+  // const [clicked, setClicked] = useState(false);
 
   const canvasRef = useRef(null);
 
@@ -101,14 +101,14 @@ const CovalentTokenViewer = () => {
     getData();
   };
 
-  const handleSphereClick = (token) => {
-    if (!clicked) {
-      setClicked(true);
-      alert(
-        `Información del Token:\nNombre: ${token.contract_name}\nValor: ${token.quote}`
-      );
-    }
-  };
+  // const handleSphereClick = (token) => {
+  //   if (!clicked) {
+  //     setClicked(true);
+  //     alert(
+  //       `Información del Token:\nNombre: ${token.contract_name}\nValor: ${token.quote}`
+  //     );
+  //   }
+  // };
 
   return (
     <>
