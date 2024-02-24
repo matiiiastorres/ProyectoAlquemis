@@ -7,7 +7,7 @@ const CovalentTokenViewer = () => {
   const [address, setAddress] = useState('');
   const [tokensData, setTokensData] = useState([]);
   const [selectedTokenIndex, setSelectedTokenIndex] = useState(-1);
-  // const [clicked, setClicked] = useState(false);
+  const [clicked, setClicked] = useState(false);
 
   const canvasRef = useRef(null);
 
@@ -53,7 +53,7 @@ const CovalentTokenViewer = () => {
           const distance = mousePos.dist(spherePos);
           if (distance < radius && p.mouseIsPressed) {
             // Verificar si se ha hecho clic
-            handleSphereClick(token); // Llamar a la función para manejar el clic en la esfera
+            // handleSphereClick(token); // Llamar a la función para manejar el clic en la esfera
           }
         }
       };
@@ -78,6 +78,36 @@ const CovalentTokenViewer = () => {
         return [255, 255, 0];
       case 'Matic Token':
         return [0, 255, 85];
+    case 'Okuru Token':
+      return [255, 165, 0]; // Naranja
+    case 'Chainlink':
+      return [128, 0, 128]; // Púrpura
+    case 'Solana':
+      return [255, 192, 203]; // Rosa claro
+    case 'Aave':
+      return [255, 140, 0]; // Naranja oscuro
+    case 'Uniswap':
+      return [139, 0, 139]; // Violeta oscuro
+    case 'Compound':
+      return [139, 69, 19]; // Café
+    case 'Maker':
+      return [0, 0, 128];   // Azul marino
+    case 'Synthetix':
+      return [106, 90, 205]; // Azul violeta
+    case 'Yearn.finance':
+      return [255, 215, 0]; // Dorado
+    case 'SushiSwap':
+      return [255, 99, 71]; // Rojo tomate
+    case 'Curve DAO Token':
+      return [0, 128, 128]; // Verde azulado
+    case 'Ripple':
+      return [0, 191, 255]; // Azul cielo
+    case 'Litecoin':
+      return [169, 169, 169]; // Gris oscuro
+
+
+
+
       default:
         return [Math.random() * 255, Math.random() * 255, Math.random() * 255];
     }
