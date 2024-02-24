@@ -80,9 +80,9 @@ const CovalentTokenViewer = () => {
         return [0, 255, 85];
     case 'Okuru Token':
       return [255, 165, 0]; // Naranja
-    case 'Chainlink':
+    case 'SHIBA INU':
       return [128, 0, 128]; // Púrpura
-    case 'Solana':
+    case 'LoopringCoin V2':
       return [255, 192, 203]; // Rosa claro
     case 'Aave':
       return [255, 140, 0]; // Naranja oscuro
