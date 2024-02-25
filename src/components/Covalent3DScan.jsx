@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import p5 from 'p5';
 import './covalent3DScan.css';
 import MATIVIDEO from '../components/2_2.mp4';
-import LOGOPNGANIMADO from '../components/ultimo-video-logo-covalent-bou-unscreen (1).gif';
+import LOGOPNGANIMADO from '../components/kjljjkl-removebg-preview.png';
 
 const CovalentTokenViewer = () => {
   const [address, setAddress] = useState('');
