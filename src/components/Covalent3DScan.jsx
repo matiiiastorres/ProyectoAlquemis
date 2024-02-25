@@ -181,9 +181,12 @@ const CovalentTokenViewer = () => {
           >
             <h2>{token.contract_name}</h2>
             <h2>{token.quote}</h2>
-            <img
-  src={token.logo_url || LOGOPNGANIMADO }
-            
+           
+<img
+  src={token.logo_url}
+  onError={(e) => {
+    e.target.src = LOGOPNGANIMADO; // Si falla la carga de la imagen del token, se carga la imagen por defecto
+  }}
   alt="Token Logo"
   className="token-logo"
   style={{ width: '64px', height: '64px' }}
