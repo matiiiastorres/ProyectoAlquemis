@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import p5 from 'p5';
 import './covalent3DScan.css';
 import MATIVIDEO from '../components/2_2.mp4';
+import LOGOPNGANIMADO from './ultimo-video-logo-covalent-bou-unscreen.png';
 
 const CovalentTokenViewer = () => {
   const [address, setAddress] = useState('');
@@ -86,23 +87,23 @@ const CovalentTokenViewer = () => {
       return [255, 192, 203]; // Rosa claro
     case 'Wrapped BTC':
       return [255, 140, 0]; // Naranja oscuro
-    case 'HoloToken':
+    case 'Arbitrum':
       return [139, 0, 139]; // Violeta oscuro
-    case 'Compound':
+    case 'Blur':
       return [139, 69, 19]; // Café
-    case 'Maker':
+    case 'Decentraland MANA':
       return [0, 0, 128];   // Azul marino
-    case 'Synthetix':
+    case 'Myria':
       return [106, 90, 205]; // Azul violeta
-    case 'Yearn.finance':
+    case 'SushiToken':
       return [255, 215, 0]; // Dorado
     case 'SushiSwap':
       return [255, 99, 71]; // Rojo tomate
-    case 'Curve DAO Token':
+    case '1INCH Token':
       return [0, 128, 128]; // Verde azulado
-    case 'Ripple':
+    case 'GraphLinq':
       return [0, 191, 255]; // Azul cielo
-    case 'Litecoin':
+    case 'Binance USD':
       return [169, 169, 169]; // Gris oscuro
 
 
@@ -181,11 +182,13 @@ const CovalentTokenViewer = () => {
             <h2>{token.contract_name}</h2>
             <h2>{token.quote}</h2>
             <img
-              src={token.logo_url}
-              alt="Token Logo"
-              className="token-logo"
-              style={{ width: '64px', height: '64px' }}
-            />
+  src={token.logo_url || LOGOPNGANIMADO }
+            
+  alt="Token Logo"
+  className="token-logo"
+  style={{ width: '64px', height: '64px' }}
+/>
+
           </div>
         ))}
       </div>
